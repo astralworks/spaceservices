@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="space services - student made website for completing assignments, tests, and chromebook services at affordable prices">
+    <title>space services - student assignment help</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <div class="particles-container" id="particles"></div>
+    
+    <header class="header">
+        <nav class="nav" role="navigation" aria-label="main navigation">
+            <div class="nav-brand">space services</div>
+            <button class="mobile-menu-btn" aria-label="toggle menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#services" class="nav-link">services</a></li>
+                <li><a href="#order" class="nav-link">order now</a></li>
+                <li><a href="#contact" class="nav-link">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">space services</h1>
+                <p class="hero-slogan">too lazy for school? dw i gotchu.</p>
+                <p class="hero-description">space services is a student made website where you can get all your needs done in one place, with cheap prices you can get your delta math done, or even your test's done and made sure you get an a+</p>
+                <a href="#order" class="cta-button">get started</a>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2 class="section-title">our services</h2>
+                
+                <div class="category-group">
+                    <h3 class="category-title school-category">school</h3>
+                    <div class="services-grid">
+                        <div class="service-card" tabindex="0" role="article">
+                            <h4 class="service-name">complete deltamath assignment</h4>
+                            <p class="service-price">$3</p>
+                        </div>
+                        
+                        <div class="service-card" tabindex="0" role="article">
+                            <h4 class="service-name">complete test</h4>
+                            <p class="service-price">$5</p>
+                            <p class="service-note">(if the score is 90 or under you can get it for free)</p>
+                        </div>
+                        
+                        <div class="service-card" tabindex="0" role="article">
+                            <h4 class="service-name">complete any missing work</h4>
+                            <p class="service-price">$4</p>
+                        </div>
+                        
+                        <div class="service-card" tabindex="0" role="article">
+                            <h4 class="service-name">complete presentation</h4>
+                            <p class="service-price">$5</p>
+                        </div>
+                        
+                        <div class="service-card" tabindex="0" role="article">
+                            <h4 class="service-name">complete common lit</h4>
+                            <p class="service-price">$3</p>
+                        </div>
+                        
+                        <div class="service-card" tabindex="0" role="article">
+                            <h4 class="service-name">complete lockdown browser test</h4>
+                            <p class="service-price">$6</p>
+                        </div>
+                        
+                        <div class="service-card" tabindex="0" role="article">
+                            <h4 class="service-name">complete quiz</h4>
+                            <p class="service-price">$3</p>
+                        </div>
+                        
+                        <div class="service-card" tabindex="0" role="article">
+                            <h4 class="service-name">complete essay</h4>
+                            <p class="service-price">$5</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-group">
+                    <h3 class="category-title chromebook-category">chromebook</h3>
+                    <div class="services-grid">
+                        <div class="service-card" tabindex="0" role="article">
+                            <h4 class="service-name">unenroll chromebook</h4>
+                            <p class="service-price">$7</p>
+                            <p class="service-note">(removes school from the chromebook)</p>
+                        </div>
+                        
+                        <div class="service-card" tabindex="0" role="article">
+                            <h4 class="service-name">downgrade chromebook</h4>
+                            <p class="service-price">$2</p>
+                        </div>
+                        
+                        <div class="service-card" tabindex="0" role="article">
+                            <h4 class="service-name">jailbreak</h4>
+                            <p class="service-price">$7</p>
+                        </div>
+                        
+                        <div class="service-card" tabindex="0" role="article">
+                            <h4 class="service-name">add linux to chromebook</h4>
+                            <p class="service-price">$10</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="order" class="order-section">
+            <div class="container">
+                <h2 class="section-title">place your order</h2>
+                <form id="order-form" class="order-form" novalidate>
+                    <div class="form-group">
+                        <label for="full-name" class="form-label">full name</label>
+                        <input type="text" id="full-name" name="full-name" class="form-input" required autocomplete="name" aria-required="true">
+                        <span class="form-error" id="full-name-error" role="alert"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-method" class="form-label">contact method</label>
+                        <select id="contact-method" name="contact-method" class="form-select" required aria-required="true">
+                            <option value="">select contact method</option>
+                            <option value="phone">phone number</option>
+                            <option value="email">email</option>
+                            <option value="discord">discord</option>
+                            <option value="instagram">instagram</option>
+                            <option value="snapchat">snapchat</option>
+                        </select>
+                        <span class="form-error" id="contact-method-error" role="alert"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-value" class="form-label" id="contact-value-label">contact details</label>
+                        <input type="text" id="contact-value" name="contact-value" class="form-input" required autocomplete="tel" aria-required="true" aria-labelledby="contact-value-label">
+                        <span class="form-error" id="contact-value-error" role="alert"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-id" class="form-label">student id</label>
+                        <input type="text" id="student-id" name="student-id" class="form-input" required autocomplete="username" aria-required="true">
+                        <span class="form-error" id="student-id-error" role="alert"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-password" class="form-label">password</label>
+                        <input type="password" id="student-password" name="student-password" class="form-input" required autocomplete="current-password" aria-required="true">
+                        <span class="form-error" id="student-password-error" role="alert"></span>
+                    </div>
+
+                    <div class="credentials-note">
+                        <p>⚠️ this is used to sign in and complete any delta math or missing assignments, nothing bad will happen to your account</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service-selection" class="form-label">select service</label>
+                        <select id="service-selection" name="service-selection" class="form-select" required aria-required="true">
+                            <option value="">choose a service</option>
+                            <optgroup label="school services">
+                                <option value="deltamath">complete deltamath assignment - $3</option>
+                                <option value="test">complete test - $5</option>
+                                <option value="missing-work">complete any missing work - $4</option>
+                                <option value="presentation">complete presentation - $5</option>
+                                <option value="common-lit">complete common lit - $3</option>
+                                <option value="lockdown-test">complete lockdown browser test - $6</option>
+                                <option value="quiz">complete quiz - $3</option>
+                                <option value="essay">complete essay - $5</option>
+                            </optgroup>
+                            <optgroup label="chromebook services">
+                                <option value="unenroll">unenroll chromebook - $7 (removes school from the chromebook)</option>
+                                <option value="downgrade">downgrade chromebook - $2</option>
+                                <option value="jailbreak">jailbreak - $7</option>
+                                <option value="linux">add linux to chromebook - $10</option>
+                            </optgroup>
+                        </select>
+                        <span class="form-error" id="service-selection-error" role="alert"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="additional-notes" class="form-label">additional notes (optional)</label>
+                        <textarea id="additional-notes" name="additional-notes" class="form-textarea" rows="4" placeholder="any specific requirements or details..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">submit order</button>
+                    <div id="form-success" class="form-success" role="alert"></div>
+                </form>
+            </div>
+        </section>
+
+        <section class="disclaimer-section">
+            <div class="container">
+                <div class="disclaimer-box">
+                    <h3 class="disclaimer-title">⚠️ disclaimer!!</h3>
+                    <p class="disclaimer-text">if you do any of these things and get caught, that is your fault and i do not take any blame. use at your own risk!!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2026 space services. all rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
